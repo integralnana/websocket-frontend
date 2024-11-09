@@ -8,7 +8,7 @@ const WebSocketClient = () => {
 
   const connectWebSocket = useCallback(() => {
     const websocket = new WebSocket(
-      "https://websocket-backend-vi0h.onrender.com"
+      "wss://websocket-backend-vi0h.onrender.com"
     );
 
     websocket.onopen = () => {
