@@ -7,7 +7,9 @@ const WebSocketClient = () => {
   const [status, setStatus] = useState("connecting");
 
   const connectWebSocket = useCallback(() => {
-    const websocket = new WebSocket("ws://localhost:8080");
+    const websocket = new WebSocket(
+      "https://websocket-backend-vi0h.onrender.com"
+    );
 
     websocket.onopen = () => {
       setStatus("connected");
